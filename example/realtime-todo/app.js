@@ -15,6 +15,8 @@ function DemoCtrl($scope, $http, Backand) {
   $scope.todos = [];
   Backand.useAnonymousAuth();
 
+  // console.log(Backand);
+
   Backand.on('todo_updated', function (data) {
     //Get the event and refresh the list
     console.log("event:" + data);
@@ -27,27 +29,28 @@ function DemoCtrl($scope, $http, Backand) {
       pageNumber: 1,
       sort: '[{fieldName:\'id\', order:\'desc\'}]'
     }
-    Backand.getList(objectName, params).then(function(response) {
-      $scope.todos = response.data.data;
+    Backand.object.getList(objectName, params).then(function(response) {
+      $scope.todos = response.data;
     });
   };
+  $scope.readList();
 
   $scope.create = function (newTodo) {
-    return Backand.create(objectName, newTodo, {returnObject: true}).then(function(response) {
+    return Backand.object.create(objectName, newTodo, {returnObject: true}).then(function(response) {
       //$scope.readList();
       return response.data;
     });
   };
 
   $scope.update = function (todo) {
-    return Backand.update(objectName, todo.id, todo, {returnObject: true}).then(function(response) {
+    return Backand.object.update(objectName, todo.id, todo, {returnObject: true}).then(function(response) {
       //$scope.readList();
       return response.data;
     });
   };
 
   $scope.delete = function (todo) {
-    return Backand.remove(objectName, todo.id).then(function(response) {
+    return Backand.object.remove(objectName, todo.id).then(function(response) {
       $scope.readList();
       return response.data;
     });

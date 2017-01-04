@@ -1,0 +1,33 @@
+{
+  "name": "angular1bknd-sdk",
+  "version": "1.0.0",
+  "description": "Backand SDK for Angular 1",
+  "main": "./src/backandProvider.js",
+  "files": [
+    "example"
+  ],
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {  },
+  "author": "Ran Cohen <rannn505@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vanillabknd-sdk": "^1.0.1",
+  },
+  "devDependencies": {  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backand/vanillabknd-sdk.git"
+  },
+  "homepage": "https://github.com/backand/vanillabknd-sdk#readme",
+  "keywords": [
+    "Backand",
+    "backend",
+    "backend sdk",
+    "backend js",
+    "backend javascript",
+    "angular1bknd-sdk",
+    "backend angular sdk"
+  ]
+}

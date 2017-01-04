@@ -46,19 +46,25 @@
 
     this.$get = ['$timeout', function BackandFactory($timeout) {
       backand.init && backand.init(config);
-      var backandAngular = { };
-      for (let fn in backand) {
-        if (typeof backand[fn] === "function") {
-          backandAngular[fn] = function () {
-            var args = [].slice.call(arguments);
-            return $timeout.apply(undefined, [backand[fn], 0, true].concat(args));
+      function wrap (obj) {
+        var temp = obj.constructor();
+        Object.keys(obj).forEach(function (key) {
+          if (typeof obj[key] === 'function') {
+            temp[key] = function () {
+              var args = Array.prototype.slice.call(arguments);
+              return $timeout.apply(undefined, [obj[key], 0, true].concat(args));
+            }
           }
-        }
-        else {
-          backandAngular[fn] = backand[fn];
-        }
-      }
-      return backandAngular;
+          else if(typeof obj[key] !== 'object' || key === 'utils') {
+            temp[key] = obj[key];
+          }
+          else {
+            temp[key] = wrap(obj[key]);
+          }
+        });
+        return temp;
+      };
+      return wrap(backand);
     }];
   }
 })();
