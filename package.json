@@ -10,7 +10,7 @@
     "example": "example"
   },
   "scripts": {  },
-  "author": "Ran Cohen <rannn505@outlook.com>",
+  "author": "Backand",
   "license": "MIT",
   "dependencies": {
     "vanillabknd-sdk": "^1.0.1",
