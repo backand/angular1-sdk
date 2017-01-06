@@ -55,7 +55,7 @@
               return $timeout.apply(undefined, [obj[key], 0, true].concat(args));
             }
           }
-          else if(typeof obj[key] !== 'object' || key === 'utils') {
+          else if(typeof obj[key] !== 'object' || key === 'utils' || key === 'defaults') {
             temp[key] = obj[key];
           }
           else {
