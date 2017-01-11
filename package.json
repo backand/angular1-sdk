@@ -1,26 +1,28 @@
 {
   "name": "angular1bknd-sdk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Backand SDK for Angular 1",
-  "main": "./src/backandProvider.js",
+  "main": "./src/backand.provider.js",
   "files": [
+    "src",
     "example"
   ],
   "directories": {
     "example": "example"
   },
-  "scripts": {  },
+  "scripts": {},
   "author": "Backand",
   "license": "MIT",
   "dependencies": {
-    "vanillabknd-sdk": "^1.0.1",
+    "angular": "^1.6.1",
+    "vanillabknd-sdk": "https://github.com/backand/vanillabknd-sdk.git#index"
   },
-  "devDependencies": {  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/backand/vanillabknd-sdk.git"
+    "url": "git+https://github.com/backand/angular1bknd-sdk.git"
   },
-  "homepage": "https://github.com/backand/vanillabknd-sdk#readme",
+  "homepage": "https://github.com/backand/angular1bknd-sdk#readme",
   "keywords": [
     "Backand",
     "backend",

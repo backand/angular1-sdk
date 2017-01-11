@@ -46,7 +46,7 @@
 
     this.$get = ['$timeout', function BackandFactory($timeout) {
       backand.init && backand.init(config);
-      function wrap (obj) {
+      return (function wrap (obj) {
         var temp = obj.constructor();
         Object.keys(obj).forEach(function (key) {
           if (typeof obj[key] === 'function') {
@@ -63,8 +63,7 @@
           }
         });
         return temp;
-      };
-      return wrap(backand);
+      })(backand);
     }];
   }
 })();
