@@ -1,9 +1,9 @@
 (function() {
-    'use strict';
+  'use strict';
 
   angular
-    .module('backand', [])
-    .provider('Backand', BackandProvider);
+      .module('backand', [])
+      .provider('Backand', BackandProvider);
 
   function BackandProvider() {
     this.init = backand.init;
@@ -29,9 +29,9 @@
       return this;
     };
     this.runSigninAfterSignup = function (runSigninAfterSignup) {
-       config.runSigninAfterSignup = runSigninAfterSignup;
-       return this;
-     };
+      config.runSigninAfterSignup = runSigninAfterSignup;
+      return this;
+    };
     this.runSocket = function (runSocket) {
       config.runSocket = runSocket;
       return this;
@@ -40,13 +40,13 @@
       config.socketUrl = newSocketUrl;
       return this;
     };
-    this.isMobile = function(isMobile){
+    this.setIsMobile = function(isMobile){
       config.isMobile = isMobile;
     };
 
     this.$get = ['$timeout', function BackandFactory($timeout) {
       backand.init && backand.init(config);
-      return (function wrap (obj) {
+      var a = (function wrap (obj) {
         var temp = obj.constructor();
         Object.keys(obj).forEach(function (key) {
           if (typeof obj[key] === 'function') {
@@ -64,6 +64,13 @@
         });
         return temp;
       })(backand);
+      a.setIsMobile = function(isMobile){
+        backand.defaults.isMobile = isMobile;
+      };
+      a.getApiUrl = function(){
+        return backand.defaults.apiUrl;
+      };
+      return a;
     }];
   }
 })();
