@@ -42,11 +42,12 @@
     };
     this.setIsMobile = function(isMobile){
       config.isMobile = isMobile;
+      return this;
     };
 
     this.$get = ['$timeout', function BackandFactory($timeout) {
       backand.init && backand.init(config);
-      var BKND_ANGULAR = (function wrap (obj) {
+      var BKNDANGULAR = (function wrap (obj) {
         var temp = obj.constructor();
         Object.keys(obj).forEach(function (key) {
           if (typeof obj[key] === 'function') {
@@ -65,14 +66,14 @@
         return temp;
       })(backand);
 
-      BKND_ANGULAR.setIsMobile = function(isMobile){
+      BKNDANGULAR.setIsMobile = function(isMobile){
         backand.defaults.isMobile = isMobile;
       };
-      BKND_ANGULAR.getApiUrl = function(){
+      BKNDANGULAR.getApiUrl = function(){
         return backand.defaults.apiUrl;
       };
 
-      return BKND_ANGULAR;
+      return BKNDANGULAR;
     }];
   }
 })();

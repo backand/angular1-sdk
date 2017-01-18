@@ -1,6 +1,6 @@
 {
-  "name": "angular1bknd-sdk",
-  "version": "1.1.0",
+  "name": "@backand/angular1bknd-sdk",
+  "version": "1.0.30",
   "description": "Backand SDK for Angular 1",
   "main": "./dist/backand.provider.js",
   "files": [
@@ -18,8 +18,8 @@
   "author": "Backand",
   "license": "MIT",
   "dependencies": {
-    "angular": "^1.6.1",
-    "vanillabknd-sdk": "https://github.com/backand/vanillabknd-sdk.git#index"
+    "@backand/bkndvanilla-sdk": "^1.0.30",
+    "angular": "^1.6.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
