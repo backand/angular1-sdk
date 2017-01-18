@@ -1,6 +1,6 @@
 {
-  "name": "@backand/bkndangular1-sdk",
-  "version": "1.0.30",
+  "name": "@backand/angular1-sdk",
+  "version": "1.0.4",
   "description": "Backand SDK for Angular 1",
   "main": "./dist/backand.provider.js",
   "files": [
@@ -18,7 +18,7 @@
   "author": "Backand",
   "license": "MIT",
   "dependencies": {
-    "@backand/bkndvanilla-sdk": "^1.0.30",
+    "@backand/vanilla-sdk": "^1.0.4",
     "angular": "^1.6.1"
   },
   "devDependencies": {
@@ -31,19 +31,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/backand/bkndangular1-sdk.git"
+    "url": "git+https://github.com/backand/angular1-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/backand/bkndangular1-sdk/issues"
+    "url": "https://github.com/backand/angular1-sdk/issues"
   },
-  "homepage": "https://github.com/backand/bkndangular1-sdk#readme",
+  "homepage": "https://github.com/backand/angular1-sdk#readme",
   "keywords": [
     "Backand",
     "backend",
     "backend sdk",
     "backend js",
     "backend javascript",
-    "bkndangular1-sdk",
+    "angular1-sdk",
     "backend angular sdk"
   ]
 }
