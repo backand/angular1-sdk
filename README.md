@@ -5,7 +5,7 @@ angular1-sdk
 
 >  Backand SDK for [Angularjs1](https://angularjs.org/).
 This SDK enables you to communicate comfortably and quickly with your Backand app.
-It wraps the [bkndvanilla-sdk](https://github.com/backand/bkndvanilla-sdk) to allow easier work on projects involving Angularjs1.
+It wraps the [vanilla-sdk](https://github.com/backand/vanilla-sdk) to allow easier work on projects involving Angularjs1.
 
 
 ## Installation
