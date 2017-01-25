@@ -15,8 +15,8 @@
     "gulpfile.js"
   ],
   "dependencies": {
-    "backand-vanilla-sdk": "1.0.9",
-    "angular": "1.6.1"
+    "angular": "^1.6.1",
+    "backand-vanilla-sdk": "1.0.9"
   },
   "authors": [
     "Backand"
