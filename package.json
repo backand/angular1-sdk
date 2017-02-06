@@ -5,7 +5,8 @@
   "main": "./dist/backand.provider.js",
   "files": [
     "dist",
-    "example"
+    "example",
+    "test"
   ],
   "directories": {
     "example": "example"
