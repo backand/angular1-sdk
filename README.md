@@ -23,8 +23,8 @@ To install the Angular 1 SDK, use the correct command for your dependency manage
 Include the following tags in your `index.html` file to start working with the SDK:
 
 ``` html
-<script src="node_modules/@backand/angular1-sdk/backand.provider.min.js"></script>
-<script src="backand.provider.min.js"></script>
+  <script src="//cdn.backand.net/vanilla-sdk/1.0.9/backand.js"></script>;
+  <script src="//cdn.backand.net/angular1-sdk/1.9.5/backand.provider.js"></script>
 ```
 
 
