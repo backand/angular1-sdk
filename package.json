@@ -15,7 +15,7 @@
     "build": "gulp",
     "dev": "gulp watch",
     "start": "browser-sync start -s ./example/ -f ./dist/ ./example/ --ss ./dist/ ./node_modules/ --port 3000",
-    "test": "browser-sync start -s ./test/    -f ./dist/ ./test/    --ss ./dist/ ./node_modules/ --port 3000 --index runner.html"
+    "test":  "browser-sync start -s ./test/    -f ./dist/ ./test/    --ss ./dist/ ./node_modules/ --port 3000 --index runner.html"
   },
   "author": "Backand",
   "license": "MIT",
