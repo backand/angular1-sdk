@@ -1,10 +1,10 @@
 /*********************************************************
  * @backand/angular1-sdk - Backand SDK for Angular 1
- * @version v1.9.5
+ * @version v1.9.6
  * @link https://github.com/backand/angular1-sdk#readme
  * @copyright Copyright (c) 2017 Backand https://www.backand.com/
  * @license MIT (http://www.opensource.org/licenses/mit-license.php)
- * @Compiled At: 2017-01-25
+ * @Compiled At: 2017-02-09
   *********************************************************/
 (function() {
   'use strict';
@@ -52,6 +52,10 @@
       config.isMobile = isMobile;
       return this;
     };
+    this.setMobilePlatform = function(mobilePlatform){
+      config.mobilePlatform = mobilePlatform;
+      return this;
+    };
 
     this.$get = ['$timeout', function BackandFactory($timeout) {
       backand.init && backand.init(config);
@@ -76,6 +80,9 @@
 
       BKNDANGULAR.setIsMobile = function(isMobile){
         backand.defaults.isMobile = isMobile;
+      };
+      BKNDANGULAR.setMobilePlatform = function(mobilePlatform){
+        backand.defaults.mobilePlatform = mobilePlatform;
       };
       BKNDANGULAR.getApiUrl = function(){
         return backand.defaults.apiUrl;

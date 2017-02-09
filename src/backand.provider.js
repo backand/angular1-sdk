@@ -44,6 +44,10 @@
       config.isMobile = isMobile;
       return this;
     };
+    this.setMobilePlatform = function(mobilePlatform){
+      config.mobilePlatform = mobilePlatform;
+      return this;
+    };
 
     this.$get = ['$timeout', function BackandFactory($timeout) {
       backand.init && backand.init(config);
@@ -68,6 +72,9 @@
 
       BKNDANGULAR.setIsMobile = function(isMobile){
         backand.defaults.isMobile = isMobile;
+      };
+      BKNDANGULAR.setMobilePlatform = function(mobilePlatform){
+        backand.defaults.mobilePlatform = mobilePlatform;
       };
       BKNDANGULAR.getApiUrl = function(){
         return backand.defaults.apiUrl;

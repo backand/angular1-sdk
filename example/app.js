@@ -3,7 +3,7 @@ angular
   .config(function (BackandProvider) {
     BackandProvider.setAppName('backandtodoapp');
     BackandProvider.setSignUpToken('76a0ed19-c9d4-405a-9e20-493d637b131c');
-    BackandProvider.setAnonymousToken('6adbc622-36b5-496c-b288-19ea28816f10');
+    BackandProvider.setAnonymousToken('6adbc622-36b5-496c-b288-19ea28816f10')
     BackandProvider.runSocket(true);
   })
   .controller('DemoCtrl', ['$scope', '$http', 'Backand', DemoCtrl]);
