@@ -54,6 +54,10 @@ angular
 
 Review the full API reference at our [vanilla-sdk's github](https://github.com/backand/vanilla-sdk) to get started with your back end!
 
+## Migrating an old Angular 1 Backand App?
+
+If you're migrating an older Angular 1 Backand app, which was built on our old SDK, we provide a [set of instructions](http://docs.backand.com/en/latest/what_would_you_like_to_do/convert_new_sdk/index.html) in our documentation that you can use to migrate your code. Simply follow the directions provided to get started!
+
 ## Examples
 ***To view a demo of the SDK in action, just run npm start - [example page](https://github.com/backand/angular1-sdk/blob/master/example/).***
 
