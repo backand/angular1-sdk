@@ -4,6 +4,8 @@ angular1-sdk
 This is the documentation for Back&'s Angular 1 SDK. This SDK enables you to communicate comfortably and quickly with your Backand app.
 It wraps the [vanilla-sdk](https://github.com/backand/vanilla-sdk) to allow you to work with Back& more easily when working on projects based on Angular.js 1.
 
+**NOTE: Updating an existing app to our new Angular 1 SDK? We've written [an article](http://docs.backand.com/en/latest/what_would_you_like_to_do/convert_new_sdk/index.html) to help! Head to [http://docs.backand.com](http://docs.backand.com/en/latest/what_would_you_like_to_do/convert_new_sdk/index.html) to get started.**
+
 ## Overview
 This SDK is an Angular 1 wrapper around our [vanilla-sdk](https://github.com/backand/vanilla-sdk). This provides convenient objects and properties for Angular 1 apps working with Back&. You can refer to the [vanilla-sdk](https://github.com/backand/vanilla-sdk)'s readme for a full API reference. Follow the instructions below to install our Angular 1 SDK!
 
