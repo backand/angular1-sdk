@@ -1,6 +1,6 @@
 {
   "name": "@backand/angular1-sdk",
-  "version": "1.9.8",
+  "version": "1.9.9",
   "description": "Backand SDK for Angular 1",
   "main": "./dist/backand.provider.js",
   "files": [
@@ -15,7 +15,7 @@
     "build": "gulp",
     "dev": "gulp watch",
     "start": "browser-sync start -s ./example/ -f ./dist/ ./example/ --ss ./dist/ ./node_modules/ --port 3000",
-    "test":  "browser-sync start -s ./test/    -f ./dist/ ./test/    --ss ./dist/ ./node_modules/ --port 3000 --index runner.html"
+    "test": "browser-sync start -s ./test/    -f ./dist/ ./test/    --ss ./dist/ ./node_modules/ --port 3000 --index runner.html"
   },
   "author": "Backand",
   "license": "MIT",
