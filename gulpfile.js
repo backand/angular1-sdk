@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var gutil = require('gulp-util');
 var header = require('gulp-header');
 var bowerJson = require('bower-json');
+var jeditor = require('gulp-json-editor');
 
 const paths = {
     src:  { js: './src/backand.provider.js' },
@@ -27,7 +28,15 @@ gulp.task('clean', function () {
     .pipe(clean({force: true}));
 });
 
-gulp.task('bower', function () {
+gulp.task('bower', ()=> {
+  gulp.src('./bower.json')
+  .pipe(jeditor({
+    'version': require('./package.json').version
+  }))
+  .pipe(gulp.dest('./'));
+})
+
+gulp.task('checkBower', function () {
   return bowerJson.read('./bower.json', function (err, json) {
     if (err) {
         console.error('There was an error reading the file');
