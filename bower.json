@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "angular": "~1.5.3",
-    "backand-vanilla-sdk": "1.1.4"
+    "backand-vanilla-sdk": "^1.1.5"
   },
   "authors": [
     "Backand"
@@ -36,5 +36,8 @@
     "angular1-sdk",
     "backend angular sdk"
   ],
-  "private": false
+  "private": false,
+  "resolutions": {
+    "backand-vanilla-sdk": "^1.1.5"
+  }
 }
