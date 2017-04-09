@@ -23,7 +23,7 @@
   "author": "Backand",
   "license": "MIT",
   "dependencies": {
-    "@backand/vanilla-sdk": "^1.1.7",
+    "@backand/vanilla-sdk": "^1.1.10",
     "angular": "^1.6.1"
   },
   "devDependencies": {
