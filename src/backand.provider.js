@@ -63,6 +63,10 @@
           else if(typeof obj[key] !== 'object' || key === 'utils' || key === 'defaults' || key === 'helpers') {
             temp[key] = obj[key];
           }
+          else if(key === 'cache' || key === 'queue') {
+            var desc = Object.getOwnPropertyDescriptor(obj, key);
+            Object.defineProperty(temp, key, desc);
+          }
           else {
             temp[key] = wrap(obj[key]);
           }

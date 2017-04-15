@@ -4,7 +4,7 @@
  * @link https://github.com/backand/angular1-sdk#readme
  * @copyright Copyright (c) 2017 Backand https://www.backand.com/
  * @license MIT (http://www.opensource.org/licenses/mit-license.php)
- * @Compiled At: 2017-04-10
+ * @Compiled At: 2017-04-15
   *********************************************************/
 (function() {
   'use strict';
@@ -70,6 +70,10 @@
           }
           else if(typeof obj[key] !== 'object' || key === 'utils' || key === 'defaults' || key === 'helpers') {
             temp[key] = obj[key];
+          }
+          else if(key === 'cache' || key === 'queue') {
+            var desc = Object.getOwnPropertyDescriptor(obj, key);
+            Object.defineProperty(temp, key, desc);
           }
           else {
             temp[key] = wrap(obj[key]);
