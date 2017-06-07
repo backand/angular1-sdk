@@ -1,10 +1,10 @@
 /*********************************************************
  * @backand/angular1-sdk - Backand SDK for Angular 1
- * @version v2.0.3
+ * @version v2.0.4
  * @link https://github.com/backand/angular1-sdk#readme
  * @copyright Copyright (c) 2017 Backand https://www.backand.com/
  * @license MIT (http://www.opensource.org/licenses/mit-license.php)
- * @Compiled At: 5/29/2017
+ * @Compiled At: 6/8/2017
   *********************************************************/
 (function() {
   'use strict';
@@ -60,6 +60,9 @@
     this.$get = ['$timeout', function BackandFactory($timeout) {
       backand.init && backand.init(config);
       var BKNDANGULAR = (function wrap (obj) {
+        if(!obj){
+          return null;
+        }
         var temp = obj.constructor();
         Object.keys(obj).forEach(function (key) {
           if (typeof obj[key] === 'function') {
