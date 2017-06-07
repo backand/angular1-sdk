@@ -52,6 +52,9 @@
     this.$get = ['$timeout', function BackandFactory($timeout) {
       backand.init && backand.init(config);
       var BKNDANGULAR = (function wrap (obj) {
+        if(!obj){
+          return null;
+        }
         var temp = obj.constructor();
         Object.keys(obj).forEach(function (key) {
           if (typeof obj[key] === 'function') {
