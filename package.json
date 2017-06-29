@@ -1,6 +1,6 @@
 {
   "name": "@backand/angular1-sdk",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Backand SDK for Angular 1",
   "main": "./dist/backand.provider.js",
   "files": [
@@ -23,7 +23,7 @@
   "author": "Backand",
   "license": "MIT",
   "dependencies": {
-    "@backand/vanilla-sdk": "^1.2.3",
+    "@backand/vanilla-sdk": "^1.2.6",
     "angular": "^1.6.1"
   },
   "devDependencies": {
