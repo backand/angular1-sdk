@@ -1,6 +1,6 @@
 {
   "name": "@backand/angular1-sdk",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Backand SDK for Angular 1",
   "main": "./dist/backand.provider.js",
   "files": [
