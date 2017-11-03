@@ -1,10 +1,10 @@
 /*********************************************************
  * @backand/angular1-sdk - Backand SDK for Angular 1
- * @version v2.0.14
+ * @version v2.0.15
  * @link https://github.com/backand/angular1-sdk#readme
  * @copyright Copyright (c) 2017 Backand https://www.backand.com/
  * @license MIT (http://www.opensource.org/licenses/mit-license.php)
- * @Compiled At: 10/4/2017
+ * @Compiled At: 11/3/2017
   *********************************************************/
 (function() {
   'use strict';
